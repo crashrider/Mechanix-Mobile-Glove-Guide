@@ -1,2 +1,9 @@
 .DS_Store
-~/build/*
+*.log
+*.h
+*.build
+*.m
+*.xcconfig
+*.pch
+*.xcodeproj
+*.app.dSYM
