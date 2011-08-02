@@ -1,5 +1,5 @@
 //main app BG color
-//Titanium.UI.iPhone.statusBarHidden = true;
+Titanium.UI.iPhone.statusBarHidden = true;
 //Titanium.UI.setBackgroundColor('#000');
 
 //init 
