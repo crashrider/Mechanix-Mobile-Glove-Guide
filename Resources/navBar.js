@@ -24,7 +24,7 @@ function createNavButtons(parent) {
 	var nav2 = Titanium.UI.createButton({
 		defaultImage: 'ui-images/nav-bar/nav-up-3.png',
 		backgroundSelectedImage: 'ui-images/nav-bar/nav-down-3.png',
-		backgroundImage: 'ui-images/nav-bar/nav-up-3.png',
+		backgroundImage: 'ui-images/nav-bar/nav-down-3.png',
 		height:43,
 		width: 35,
 		left: 125,
@@ -54,7 +54,13 @@ function createNavButtons(parent) {
 			left: 195+(i*110),
 			borderRadius: 0,
 			isSelected: 0
-		});		
+		});
+		if (i==0){
+			catButtonArray[i].backgroundImage = "ui-images/nav-bar/alt-nav-down-5.png";
+			catButtonArray[i].isSelected = 1;
+		}
+		
+				
 		catButtonArray[i].addEventListener('click', catButClick);
 		parent.add(catButtonArray[i]);
 		actualCount++;
@@ -64,7 +70,7 @@ function createNavButtons(parent) {
 		width: 59,
 		left: 965
 	});
-
+	
 	nav1.addEventListener('click', getHandChart);
 	nav2.addEventListener('click', getGloveGuide);
 	nav3.addEventListener('click', getInfo);

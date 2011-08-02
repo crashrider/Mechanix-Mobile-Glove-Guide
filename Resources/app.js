@@ -1,6 +1,6 @@
 //main app BG color
 Titanium.UI.iPhone.statusBarHidden = true;
-Titanium.UI.setBackgroundColor('#000');
+Titanium.UI.setBackgroundColor('#000000');
 
 //init 
 var gloves = [];
@@ -16,7 +16,7 @@ var ggMainContainer = Titanium.UI.createWindow({
    backgroundColor:'#FFFFFF',
    height: 768,
    width: 1024,
-   backgroundImage: 'ui-images/main-bg.jpg'
+   backgroundImage: 'ui-images/main-bg.png'
 });
 
 var splashScreen = Titanium.UI.createWindow({
