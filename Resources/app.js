@@ -49,10 +49,10 @@ var videoWin = Titanium.UI.createWindow({
 //App Views get added to this
 var ggContentsWin = Titanium.UI.createWindow({
    backgroundColor:'#FFF',
-   width: 1024,
+   width: 7168,
    top: 43,
    hieght: 'auto',
-   right: 1024
+   left: 1024
 });
 
 var testPlayer = Titanium.Media.createVideoPlayer({
@@ -62,7 +62,7 @@ var testPlayer = Titanium.Media.createVideoPlayer({
 	height: 350,
 	autoplay: false,
 	initialPlaybackTime: '0',
-	//movieControlStyle: Titanium.Media.VIDEO_CONTROL_NONE,
+	movieControlStyle: Titanium.Media.VIDEO_CONTROL_NONE,
 	scalingMode: Titanium.Media.VIDEO_SCALING_ASPECT_FIT	
 });
 
@@ -116,14 +116,16 @@ gloveMenu.addEventListener('click', function(e){
 });
 
 gloveDetail.addEventListener('singletap', function(e){
-	//ggDetailView.add(testPlayer);
-	//testPlayer.play();
 	createVideoPopup(e);
 });
 
 testPlayer.addEventListener('complete', function(e){
-	//alert("ended!");
-	ggDetailView.remove(testPlayer);
+	testPlayer.animate({opacity: 0, duration: 300}, function(){
+		testPlayer.stop();
+		videoWin.animate({opacity: 0, duration: 500}, function(){
+				videoWin.close();
+		});
+	});
 });
 
 gloveDetail.addEventListener('touchmove', function(){
@@ -142,10 +144,12 @@ ggMainContainer.add(ggContentsWin);
 ggMainContainer.open({fullscreen:true});
 splashScreen.open({fullscreen: true});
 
-setTimeout(fadeSS, 2000);
+setTimeout(fadeSS, 200);
 
 function fadeSS(){
-	splashScreen.animate({view: ggMainContainer, transition:Ti.UI.ANIMATION_CURVE_EASE_IN}, function(){});
+	splashScreen.animate({view: ggMainContainer, transition:Ti.UI.ANIMATION_CURVE_EASE_IN}, function(){
+		setTimeout(animateCatButtons, 200);
+	});
 }
 
 

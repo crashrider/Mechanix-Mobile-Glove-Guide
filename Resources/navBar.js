@@ -54,7 +54,7 @@ function createNavButtons(parent) {
 			left: 195+(i*110),
 			borderRadius: 0,
 			isSelected: 0
-		});
+		});		
 		catButtonArray[i].addEventListener('click', catButClick);
 		parent.add(catButtonArray[i]);
 		actualCount++;
@@ -65,23 +65,24 @@ function createNavButtons(parent) {
 		left: 965
 	});
 
-	addNavButtonListeners(nav1);
-	addNavButtonListeners(nav2);
-	addNavButtonListeners(nav3);
-
+	nav1.addEventListener('click', getHandChart);
+	nav2.addEventListener('click', getGloveGuide);
+	nav3.addEventListener('click', getInfo);
+	
 	parent.add(img1);
 	parent.add(nav1);
 	parent.add(nav2);
 	parent.add(nav3);
 
 	parent.add(img2);
+	
 };
 
 function addNavButtonListeners(currButton) {
 	currButton.addEventListener('click', navButClick);
 };
 
-function navButClick(e) {
+function getGloveGuide(e) {
 	var selectButton = e.source;
 	var currWin;
 	if (selectButton.win=='Guide') {
@@ -93,7 +94,8 @@ function navButClick(e) {
 		currWin = ggHangGaugeView;
 		
 	}
-	if (selectButton.isSelected == 0) {
+	
+	/*if (selectButton.isSelected == 0) {
 		selectButton.backgroundImage = selectButton.backgroundSelectedImage;
 		selectButton.isSelected = 1;
 		if (selectButton.win=='Guide'||selectButton.win=='Info'||selectButton.win=='Gauge') {
@@ -126,13 +128,21 @@ function navButClick(e) {
 		} else {
 			animateCatButtons(1);
 		}
-	}
+	}*/
+};
+
+function getHandChart(e) {
+	
+};
+
+function getInfo(e) {
+	
 };
 
 function catButClick(e) {
-	//make sure only one Down State is selected at a time, like a tabbar
+	//make sure only one Down State is selected at a time, like a tab bar
 	var selectButton = e.source;
-	if (ggDetailView.parent) {
+	//if (ggDetailView.parent) {
 		for (var i=0;i<=catButtonArray.length;i++) {
 			if (selectButton.left == catButtonArray[i].left) {
 				selectButton.backgroundImage = selectButton.backgroundSelectedImage;
@@ -140,7 +150,7 @@ function catButClick(e) {
 				catButtonArray[i].backgroundImage = catButtonArray[i].defaultImage;
 			}
 		};
-	}
+	//}
 
 };
 
@@ -151,6 +161,7 @@ function animateCatButtons(backwards) {
 			catButtonArray[i].animate({top: -43, duration: (actualCatLen-i)*100});
 		}
 	} else {
+			
 		for(var i=0; i<=catButtonArray.length; i++) {
 			catButtonArray[i].animate({top: 0, duration: i*100});
 			//setTimeout(function(){alert(currButt[i])}, i*2000);
