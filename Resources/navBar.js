@@ -1,4 +1,5 @@
 var catButtonArray = [];
+var lastButtonSelected = 0;
 function createNavButtons(parent) {
 	//var numTotalSpaces=12;
 	//var numNavButtons=3;
@@ -53,12 +54,13 @@ function createNavButtons(parent) {
 			top: -43,
 			left: 195+(i*110),
 			borderRadius: 0,
-			isSelected: 0
+			isSelected: 0,
+			catID: i+1
 		});
-		if (i==0){
+		/*if (i==0){
 			catButtonArray[i].backgroundImage = "ui-images/nav-bar/alt-nav-down-5.png";
 			catButtonArray[i].isSelected = 1;
-		}
+		}*/
 		
 				
 		catButtonArray[i].addEventListener('click', catButClick);
@@ -148,16 +150,32 @@ function getInfo(e) {
 function catButClick(e) {
 	//make sure only one Down State is selected at a time, like a tab bar
 	var selectButton = e.source;
-	//if (ggDetailView.parent) {
-		for (var i=0;i<=catButtonArray.length;i++) {
-			if (selectButton.left == catButtonArray[i].left) {
-				selectButton.backgroundImage = selectButton.backgroundSelectedImage;
-			} else {
-				catButtonArray[i].backgroundImage = catButtonArray[i].defaultImage;
-			}
-		};
-	//}
-
+	for (var i=0;i<=catButtonArray.length-1;i++) {
+		if (selectButton.left == catButtonArray[i].left) {
+			selectButton.backgroundImage = selectButton.backgroundSelectedImage;
+		} else {
+			catButtonArray[i].backgroundImage = catButtonArray[i].defaultImage;
+		}
+	}
+	if (ggDetailView.top==43){
+		ggDetailView.animate({top: 768, duration: 200}, function(){ggDetailView.top = 768;});
+		ggContentsWin.animate({top: 43, duration: 200});
+	}
+	var difference = lastButtonSelected-selectButton.catID;
+	if (difference<0){
+		ggContentsWin.animate({left: ((selectButton.catID-1)*-1024)-45, duration: (Math.abs(difference)*200)}, function (){
+			ggContentsWin.animate({left: ((selectButton.catID-1)*-1024)+10, duration: 200}, function (){
+				ggContentsWin.animate({left: ((selectButton.catID-1)*-1024), duration: 100});
+			});
+		});
+	} else if (difference>0){
+		ggContentsWin.animate({left: ((selectButton.catID-1)*-1024)+45, duration: (Math.abs(difference)*200)}, function (){
+			ggContentsWin.animate({left: ((selectButton.catID-1)*-1024)-10, duration: 200}, function (){
+				ggContentsWin.animate({left: ((selectButton.catID-1)*-1024), duration: 100});
+			});
+		});
+	}
+	lastButtonSelected = selectButton.catID;
 };
 
 function animateCatButtons(backwards) {

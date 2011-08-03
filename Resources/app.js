@@ -48,12 +48,19 @@ var videoWin = Titanium.UI.createWindow({
 
 //App Views get added to this
 var ggContentsWin = Titanium.UI.createWindow({
-   backgroundColor:'#FFF',
+   backgroundColor: "#FFFFFF",
    width: 7168,
    top: 43,
-   hieght: 'auto',
+   height: 725,
    left: 1024
 });
+/*var ggContentsWin = Titanium.UI.createWindow({
+   backgroundColor: "#FFFFFF",
+   width: 1024,
+   top: 43,
+   hieght: 725,
+   left: 1024
+});*/
 
 var testPlayer = Titanium.Media.createVideoPlayer({
 	url: 'test.mov',
@@ -70,7 +77,10 @@ videoWin.add(testPlayer);
 
 //Different Info Views that get added to ggContentsWin//
 var ggDetailView = Titanium.UI.createWindow({
-   backgroundColor:'#FFF'
+   backgroundColor:'#FFFFFF',
+   top: 768,
+   width: 1024,
+   height: 768
 });
 
 var ggInfoView = Titanium.UI.createWindow({
@@ -138,8 +148,9 @@ createNavButtons(navBar);
 ggDetailView.add(gloveMenu);
 ggDetailView.add(gloveDetail);
 
-ggMainContainer.add(navBar);
+ggMainContainer.add(ggDetailView);
 ggMainContainer.add(ggContentsWin);
+ggMainContainer.add(navBar);
 
 ggMainContainer.open({fullscreen:true});
 splashScreen.open({fullscreen: true});
@@ -152,4 +163,5 @@ function fadeSS(){
 	});
 }
 
-
+Ti.include("catagories.js");
+Ti.API.info("fuck you");
