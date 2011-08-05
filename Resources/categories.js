@@ -1,5 +1,5 @@
 var allGlovesCont = Titanium.UI.createView({
-	backgroundColor: "#336699",
+	backgroundColor: "#FFFFFF",
 	width: 1024,
 	height: 725,
 	left: 0	
@@ -71,16 +71,36 @@ addGloveImages(allGlovesSVContent);
 
 function addGloveImages(parent){
 	var gloveImageArray = [];
-	for (i=0; i<=20; i++){
+	var lastGloveWidth = 0;
+	var totalLeft = 0;
+	for (i=1; i<=30; i++){
 		gloveImageArray[i] = Titanium.UI.createImageView({
-			url: 'gloveThumbs/MW09_MG_01_H_168x150.jpg',
-			height: 'auto',
-			width: 150,
-			left: i*150,
-			id: i
+			url: 'gloveThumbs/_sized/' + i + '.jpg',
+			height: 230,
+			width: 'auto',
+			//left: i*120,
+			detail: 'glovePages/glove' + i +'.jpg'
 		});
+		if (i>1&&i!=11&&i!=21){
+			totalLeft+=lastGloveWidth;
+		}
+		
+		if (i<=10){
+			gloveImageArray[i].top = 21;
+		} else if (i>=11&&i<=20){
+			gloveImageArray[i].top = 241;
+		} else if (i>=21&&i<=30){
+			gloveImageArray[i].top = 468;
+		}
+		if (((i-1)/10) == Math.round(i/10)) {
+			totalLeft = 0;
+			lastGloveWidth = 0;
+		}	
+		gloveImageArray[i].left = totalLeft;
 		parent.add(gloveImageArray[i]);		
-		gloveImageArray[i].addEventListener('click', glovePicked);	
+		gloveImageArray[i].addEventListener('click', glovePicked);
+		
+		lastGloveWidth = gloveImageArray[i].width;
 	}
 	allGlovesSV.add(parent);
 	allGlovesCont.add(allGlovesSV);
@@ -88,7 +108,7 @@ function addGloveImages(parent){
 ggContentsWin.add([allGlovesCont,racingCont,automotiveCont,hardwareCont,safetyCont,tacticalCont,gardenCont]);
 
 function glovePicked(e){
-	//alert("you clicked glove number " + e.source.id);
+	gloveDetail.image = e.source.detail;
 	ggContentsWin.animate({top: -682, duration: 200});
 	//e.source.parent.animate({width: 1024, duration: 200});
 	//ggDetailView.top = 43;

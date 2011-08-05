@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <categories id='categories'>
+	<category id='8' name='All Product'/>
 	<category id='1' name='Racing'/>
 	<category id='2' name='Automotive'/>
 	<category id='3' name='Hardware'/>
@@ -9,73 +10,164 @@
 	<category id='7' name='Accessories'/>
 </categories>
 <glovegroup id='1' name='Racing'>
-	<glove id='3' name='The Original¨ Glove' link='/gloveThumbs/MW09_MG_01_H_168x150.jpg'/>
-	<glove id='4' name='FastFit¨ Glove' link='/gloveThumbs/MW09_MFF_02_H_168x150.jpg'/>
-	<glove id='5' name='M-Pact¨ Glove' link='/gloveThumbs/MW09_MMP_05_H_168x150.jpg'/>
-	<glove id='6' name='M-Pact¨ 2 Glove' link='/gloveThumbs/MW09_MP2_05_H_168x150.jpg'/>
-	<glove id='72' name='M-Pact¨ Fingerless' link='/gloveThumbs/MW09_MFL_05_H_168x150.jpg'/>
-	<glove id='10' name='The Original¨ Vent Glove' link='/gloveThumbs/MW09_MGV_05_H_168x150.jpg'/>
-	<glove id='7' name='The Original¨ 0.5 Glove' link='/gloveThumbs/MW09_HMG_05_H_168x150.jpg'/>
-	<glove id='9' name='The Original¨ Grip Glove' link='/gloveThumbs/MW09_MGG_05_H_168x150.jpg'/>
-	<glove id='13' name='M-Pact¨ 3 Glove' link='/gloveThumbs/MW09_MP3_05_H_168x150.jpg'/>
-	<glove id='65' name='MRT 0.5 M-Pactª Glove' link='/gloveThumbs/MW09_MRTMP_01_H_168x150.jpg'/>
-	<glove id='17' name='Team Issue: Carbon X¨ Level 1 Glove' link='/gloveThumbs/MW09_CXGL1_05_H_168x150.jpg'/>
-	<glove id='18' name='Team Issue: Carbon X¨ Level 5 Glove' link='/gloveThumbs/MW09_CXGL5_05_H_168x150.jpg'/>
-	<glove id='19' name='Team Issue: Carbon X¨ Level 10 Glove' link='/gloveThumbs/MW09_CXGL10_05_H_168x150.jpg'/>
-	<glove id='22' name='Fabricator Glove' link='/gloveThumbs/MW09_MFG_05_H_168x150.jpg'/>
-	<glove id='23' name='Happy Hour Glove' link='/gloveThumbs/MW09_MHH_05_H_168x150.jpg'/>
+	<glove id='1' name='The OriginalÂ® Glove' link='/gloveThumbs/1.jpg'/>
+	<glove id='2' name='FastFitÂ® Glove' link='/gloveThumbs/2.jpg'/>
+	<glove id='3' name='M-PactÂ® Glove' link='/gloveThumbs/3.jpg'/>
+	<glove id='4' name='M-PactÂ® 2 Glove' link='/gloveThumbs/4.jpg'/>
+	<glove id='5' name='M-PactÂ® Fingerless' link='/gloveThumbs/5.jpg'/>
+	<glove id='6' name='The OriginalÂ® Vent Glove' link='/gloveThumbs/6.jpg'/>
+	<glove id='7' name='The OriginalÂ® 0.5 Glove' link='/gloveThumbs/7.jpg'/>
+	<glove id='8' name='The OriginalÂ® Grip Glove' link='/gloveThumbs/8.jpg'/>
+	<glove id='9' name='M-PactÂ® 3 Glove' link='/gloveThumbs/9.jpg'/>
+	<glove id='10' name='MRT 0.5 M-Pactâ„¢ Glove' link='/gloveThumbs/10.jpg'/>
+	<glove id='11' name='Team Issue: Carbon XÂ® Level 1 Glove' link='/gloveThumbs/11.jpg'/>
+	<glove id='12' name='Team Issue: Carbon XÂ® Level 5 Glove' link='/gloveThumbs/12.jpg'/>
+	<glove id='13' name='Team Issue: Carbon XÂ® Level 10 Glove' link='/gloveThumbs/13.jpg'/>
+	<glove id='14' name='Fabricator Glove' link='/gloveThumbs/14.jpg'/>
+	<glove id='15' name='Happy Hour Glove' link='/gloveThumbs/15.jpg'/>
 </glovegroup>
 <glovegroup id='2' name='Automotive'>
-	<glove id='3' name='The Original¨ Glove' link='/gloveThumbs/MW09_MG_05_H_168x150.jpg'/>
-	<glove id='4' name='FastFit¨ Glove' link='/gloveThumbs/MW09_MFF_05_H_168x150.jpg'/>
-	<glove id='5' name='M-Pact¨ Glove' link='/gloveThumbs/MW09_MMP_05_H_168x150.jpg'/>
-	<glove id='6' name='M-Pact¨ 2 Glove' link='/gloveThumbs/MW09_MP2_05_H_168x150.jpg'/>
-	<glove id='72' name='M-Pact¨ Fingerless' link='/gloveThumbs/MW09_MFL_05_H_168x150.jpg'/>
-	<glove id='11' name='The Original¨ Plus Glove' link='/gloveThumbs/MW09_MGP_05_H_168x150.jpg'/>
-	<glove id='10' name='The Original¨ Vent Glove' link='/gloveThumbs/MW09_MGV_05_H_168x150.jpg'/>
-	<glove id='7' name='The Original¨ 0.5 Glove' link='/gloveThumbs/MW09_HMG_05_H_168x150.jpg'/>
-	<glove id='9' name='The Original¨ Grip Glove' link='/gloveThumbs/MW09_MGG_05_H_168x150.jpg'/>
-	<glove id='95' name='The Original¨ Glove Light' link='/gloveThumbs/MW10_GL3G_05_H_LightOn_168x150.jpg'/>
-	<glove id='8' name='The Original¨ Womens Glove' link='/gloveThumbs/MW09_MG_WOM_72_H_168x150.jpg'/>
-	<glove id='65' name='MRT 0.5 M-Pactª Glove' link='/gloveThumbs/MW09_MRTMP_01_H_168x150.jpg'/>
+	<glove id='1' name='The OriginalÂ® Glove' link='/gloveThumbs/1.jpg'/>
+	<glove id='2' name='FastFitÂ® Glove' link='/gloveThumbs/2.jpg'/>
+	<glove id='3' name='M-PactÂ® Glove' link='/gloveThumbs/3.jpg'/>
+	<glove id='4' name='M-PactÂ® 2 Glove' link='/gloveThumbs/4.jpg'/>
+	<glove id='5' name='M-PactÂ® Fingerless' link='/gloveThumbs/5.jpg'/>
+	<glove id='16' name='The OriginalÂ® Plus Glove' link='/gloveThumbs/16.jpg'/>
+	<glove id='6' name='The OriginalÂ® Vent Glove' link='/gloveThumbs/6.jpg'/>
+	<glove id='7' name='The OriginalÂ® 0.5 Glove' link='/gloveThumbs/7.jpg'/>
+	<glove id='8' name='The OriginalÂ® Grip Glove' link='/gloveThumbs/8.jpg'/>
+	<glove id='17' name='The OriginalÂ® Glove Light' link='/gloveThumbs/17.jpg'/>
+	<glove id='18' name='The OriginalÂ® Womens Glove' link='/gloveThumbs/18.jpg'/>
+	<glove id='10' name='MRT 0.5 M-Pactâ„¢ Glove' link='/gloveThumbs/10.jpg'/>
 </glovegroup>
 <glovegroup id='3' name='Hardware'>
-	<glove id='25' name='Utility Glove' link='/gloveThumbs/MW09_HW15_05_H_168x150.jpg'/>
-	<glove id='26' name='Padded Palm Glove' link='/gloveThumbs/MW09_HW25_05_H_168x150.jpg'/>
-	<glove id='27' name='Impact Pro Glove' link='/gloveThumbs/MW09_HW30_05_H_168x150.jpg'/>
-	<glove id='29' name='CG Utility Glove' link='/gloveThumbs/MW09_CG15_75_H_168x150.jpg'/>
-	<glove id='30' name='CG Padded Palm Glove' link='/gloveThumbs/MW09_CG25_75_H_168x150.jpg'/>
-	<glove id='31' name='CG Framer Glove' link='/gloveThumbs/MW09_CG17_75_H_168x150.jpg'/>
-	<glove id='32' name='CG Impact Pro Glove' link='/gloveThumbs/MW09_CG30_05_H_168x150.jpg'/>
-	<glove id='33' name='CG Heavy Duty Glove' link='/gloveThumbs/MW09_CG40_75_H_168x150.jpg'/>
-	<glove id='90' name='CG4x Utility' link='/gloveThumbs/CG4x_Util_H_168x150.jpg'/>
-	<glove id='93' name='CG4x Framer' link='/gloveThumbs/CG4x_Framer_H_168x150.jpg'/>
-	<glove id='91' name='CG4x Padded Palm' link='/gloveThumbs/CG4x_PP_H_168x150.jpg'/>
-	<glove id='92' name='CG4x Impact Pro' link='/gloveThumbs/CG4x_IP_Rust_H_168x150.jpg'/>
+	<glove id='19' name='Utility Glove' link='/gloveThumbs/19.jpg'/>
+	<glove id='20' name='Padded Palm Glove' link='/gloveThumbs/20.jpg'/>
+	<glove id='21' name='Impact Pro Glove' link='/gloveThumbs/21.jpg'/>
+	<glove id='22' name='CG Utility Glove' link='/gloveThumbs/22.jpg'/>
+	<glove id='23' name='CG Padded Palm Glove' link='/gloveThumbs/23.jpg'/>
+	<glove id='24' name='CG Framer Glove' link='/gloveThumbs/24.jpg'/>
+	<glove id='25' name='CG Impact Pro Glove' link='/gloveThumbs/25.jpg'/>
+	<glove id='26' name='CG Heavy Duty Glove' link='/gloveThumbs/26.jpg'/>
+	<glove id='27' name='CG4x Utility' link='/gloveThumbs/27.jpg'/>
+	<glove id='28' name='CG4x Framer' link='/gloveThumbs/28.jpg'/>
+	<glove id='29' name='CG4x Padded Palm' link='/gloveThumbs/29.jpg'/>
+	<glove id='30' name='CG4x Impact Pro' link='/gloveThumbs/30.jpg'/>
 </glovegroup>
 <glovegroup id='4' name='Safety'>
-	<glove id='41' name='The Safety FastFit¨' link='/gloveThumbs/MW09_SAFMFF_01_H_168x150.jpg'/>
-	<glove id='40' name='The Safety Original¨' link='/gloveThumbs/MW09_SAFMG_01_H_168x150.jpg'/>
-	<glove id='59' name='The Safety M-Pact¨' link='/gloveThumbs/CUDB3119_168x150.jpg'/>
-	<glove id='60' name='The Safety M-Pact¨ 2' link='/gloveThumbs/CUDB3123_168x150.jpg'/>
-	<glove id='61' name='The Safety M-Pact¨ ORHD' link='/gloveThumbs/IMG_0007_168x150.jpg'/>
+	<glove id='31' name='The Safety FastFitÂ®' link='/gloveThumbs/31.jpg'/>
+	<glove id='32' name='The Safety OriginalÂ®' link='/gloveThumbs/32.jpg'/>
+	<glove id='33' name='The Safety M-PactÂ®' link='/gloveThumbs/33.jpg'/>
+	<glove id='34' name='The Safety M-PactÂ® 2' link='/gloveThumbs/34.jpg'/>
+	<glove id='35' name='The Safety M-PactÂ® ORHD' link='/gloveThumbs/35.jpg'/>
 </glovegroup>
 <glovegroup id='5' name='Tactical'>
-	<glove id='34' name='The Original¨ Covert Glove' link='/gloveThumbs/MW09_MG_55_H_168x150.jpg'/>
-	<glove id='35' name='The Original¨ Woodland Camo Glove' link='/gloveThumbs/MW09_MG_71_H_168x150.jpg'/>
-	<glove id='36' name='The Original Coyote Glove' link='/gloveThumbs/MW09_MG_72_H_168x150.jpg'/>
-	<glove id='37' name='M-Pact¨ Covert Glove' link='/gloveThumbs/MW09_MMP_55_H_168x150.jpg'/>
-	<glove id='38' name='M-Pact¨ Woodland Camo Glove' link='/gloveThumbs/MW09_MMP_71_H_168x150.jpg'/>
-	<glove id='39' name='M-Pact¨ Coyote Glove' link='/gloveThumbs/MW09_MMP_72_H_168x150.jpg'/>
-	<glove id='42' name='M-Pact¨ 2 Covert Glove' link='/gloveThumbs/MW09_MP2_55_H_168x150.jpg'/>
-	<glove id='85' name='Performance Leather Driver Glove' link='/gloveThumbs/PDL_168x150.jpg'/>
-	<glove id='96' name='TAA FastFit¨ Glove' link='/gloveThumbs/MW11_MFF_F55_H_168x150.jpg'/>
-	<glove id='94' name='TAA Original¨ Glove' link='/gloveThumbs/MW11_MG_F55_H_168x150.jpg'/>
-	<glove id='98' name='TAA M-Pact¨ Glove' link='/gloveThumbs/MW11_MMP_F55_H_168x150.jpg'/>
-	<glove id='97' name='TAA M-Pact¨ 2 Glove' link='/gloveThumbs/MW11_MP2_F55_H_1_168x150.jpg'/>
-	<glove id='99' name='TAA M-Pact¨ 3 Glove' link='/gloveThumbs/MW11_MP3_F55_H_1_168x150.jpg'/>
+	<glove id='36' name='The OriginalÂ® Covert Glove' link='/gloveThumbs/36.jpg'/>
+	<glove id='37' name='The OriginalÂ® Woodland Camo Glove' link='/gloveThumbs/37.jpg'/>
+	<glove id='38' name='The Original Coyote Glove' link='/gloveThumbs/38.jpg'/>
+	<glove id='39' name='M-PactÂ® Covert Glove' link='/gloveThumbs/39.jpg'/>
+	<glove id='40' name='M-PactÂ® Woodland Camo Glove' link='/gloveThumbs/40.jpg'/>
+	<glove id='41' name='M-PactÂ® Coyote Glove' link='/gloveThumbs/41.jpg'/>
+	<glove id='42' name='M-PactÂ® 2 Covert Glove' link='/gloveThumbs/42.jpg'/>
+	<glove id='43' name='Performance Leather Driver Glove' link='/gloveThumbs/43.jpg'/>
+	<glove id='44' name='TAA FastFitÂ® Glove' link='/gloveThumbs/44.jpg'/>
+	<glove id='45' name='TAA OriginalÂ® Glove' link='/gloveThumbs/45.jpg'/>
+	<glove id='46' name='TAA M-PactÂ® Glove' link='/gloveThumbs/46.jpg'/>
+	<glove id='47' name='TAA M-PactÂ® 2 Glove' link='/gloveThumbs/47.jpg'/>
+	<glove id='48' name='TAA M-PactÂ® 3 Glove' link='/gloveThumbs/48.jpg'/>
 </glovegroup>
-<glovegroup id='5' name='Garden'>
-	<glove id='25' name='Utility Glove' link='/gloveThumbs/MW09_HW15_05_H_168x150.jpg'/>
-	<glove id='28' name='Womens Utility Glove' link='/gloveThumbs/MW09_H17_12_BIG_H_168x150.jpg'/>
+<glovegroup id='6' name='Garden'>
+	<glove id='19' name='Utility Glove' link='/gloveThumbs/19.jpg'/>
+	<glove id='49' name='Womens Utility Glove' link='/gloveThumbs/49.jpg'/>
+</glovegroup>
+<glovegroup id='7' name='Accessories'>
+	<glove id='50' name='Cold Weather Fleece Utility Glove' link='/gloveThumbs/50.jpg'/>
+	<glove id='51' name='Cold Weather Wind Resistant Glove' link='/gloveThumbs/51.jpg'/>
+	<glove id='52' name='OriginalÂ® Insulated Glove' link='/gloveThumbs/52.jpg'/>
+	<glove id='53' name='FastFitÂ® Insulated Glove' link='/gloveThumbs/53.jpg'/>
+	<glove id='54' name='Shop Apron' link='/gloveThumbs/54.jpg'/>
+	<glove id='55' name='Heat Sleeves' link='/gloveThumbs/55.jpg'/>
+	<glove id='56' name='Radio Belt' link='/gloveThumbs/56.jpg'/>
+	<glove id='57' name='Mechanix Knee Pad' link='/gloveThumbs/57.jpg'/>
+	<glove id='58' name='Team Issue Knee Pad' link='/gloveThumbs/58.jpg'/>
+	<glove id='59' name='Travel Bag' link='/gloveThumbs/59.jpg'/>
+	<glove id='60' name='Back Pack' link='/gloveThumbs/60.jpg'/>
+	<glove id='61' name='Lanyard' link='/gloveThumbs/61.jpg'/>
+	<glove id='62' name='Stickers' link='/gloveThumbs/62.jpg'/>
+	<glove id='63' name='Vinyl Track Banners' link='/gloveThumbs/63.jpg'/>
+	<glove id='64' name='Umbrella' link='/gloveThumbs/64.jpg'/>
+	<glove id='65' name='Raincoat' link='/gloveThumbs/65.jpg'/>
+	<glove id='66' name='Logo Hat' link='/gloveThumbs/66.jpg'/>
+	<glove id='67' name='Scatter Hat' link='/gloveThumbs/67.jpg'/>
+	<glove id='68' name='20 Year T-Shirt' link='/gloveThumbs/68.jpg'/>
+</glovegroup>
+<glovegroup id='7' name='All Product'>
+	<glove id='1' name='The OriginalÂ® Glove' link='/gloveThumbs/1.jpg'/>
+	<glove id='2' name='FastFitÂ® Glove' link='/gloveThumbs/2.jpg'/>
+	<glove id='3' name='M-PactÂ® Glove' link='/gloveThumbs/3.jpg'/>
+	<glove id='4' name='M-PactÂ® 2 Glove' link='/gloveThumbs/4.jpg'/>
+	<glove id='5' name='M-PactÂ® Fingerless' link='/gloveThumbs/5.jpg'/>
+	<glove id='16' name='The OriginalÂ® Plus Glove' link='/gloveThumbs/16.jpg'/>
+	<glove id='6' name='The OriginalÂ® Vent Glove' link='/gloveThumbs/6.jpg'/>
+	<glove id='7' name='The OriginalÂ® 0.5 Glove' link='/gloveThumbs/7.jpg'/>
+	<glove id='8' name='The OriginalÂ® Grip Glove' link='/gloveThumbs/8.jpg'/>
+	<glove id='17' name='The OriginalÂ® Glove Light' link='/gloveThumbs/17.jpg'/>
+	<glove id='18' name='The OriginalÂ® Womens Glove' link='/gloveThumbs/18.jpg'/>
+	<glove id='9' name='M-PactÂ® 3 Glove' link='/gloveThumbs/9.jpg'/>
+	<glove id='10' name='MRT 0.5 M-Pactâ„¢ Glove' link='/gloveThumbs/10.jpg'/>
+	<glove id='11' name='Team Issue: Carbon XÂ® Level 1 Glove' link='/gloveThumbs/11.jpg'/>
+	<glove id='12' name='Team Issue: Carbon XÂ® Level 5 Glove' link='/gloveThumbs/12.jpg'/>
+	<glove id='13' name='Team Issue: Carbon XÂ® Level 10 Glove' link='/gloveThumbs/13.jpg'/>
+	<glove id='14' name='Fabricator Glove' link='/gloveThumbs/14.jpg'/>
+	<glove id='15' name='Happy Hour Glove' link='/gloveThumbs/15.jpg'/>
+	<glove id='19' name='Utility Glove' link='/gloveThumbs/19.jpg'/>
+	<glove id='20' name='Padded Palm Glove' link='/gloveThumbs/20.jpg'/>
+	<glove id='21' name='Impact Pro Glove' link='/gloveThumbs/21.jpg'/>
+	<glove id='49' name='Womens Utility Glove' link='/gloveThumbs/49.jpg'/>
+	<glove id='22' name='CG Utility Glove' link='/gloveThumbs/22.jpg'/>
+	<glove id='23' name='CG Padded Palm Glove' link='/gloveThumbs/23.jpg'/>
+	<glove id='24' name='CG Framer Glove' link='/gloveThumbs/24.jpg'/>
+	<glove id='25' name='CG Impact Pro Glove' link='/gloveThumbs/25.jpg'/>
+	<glove id='26' name='CG Heavy Duty Glove' link='/gloveThumbs/26.jpg'/>
+	<glove id='36' name='The OriginalÂ® Covert Glove' link='/gloveThumbs/36.jpg'/>
+	<glove id='37' name='The OriginalÂ® Woodland Camo Glove' link='/gloveThumbs/37.jpg'/>
+	<glove id='38' name='The Original Coyote Glove' link='/gloveThumbs/38.jpg'/>
+	<glove id='39' name='M-PactÂ® Covert Glove' link='/gloveThumbs/39.jpg'/>
+	<glove id='40' name='M-PactÂ® Woodland Camo Glove' link='/gloveThumbs/40.jpg'/>
+	<glove id='41' name='M-PactÂ® Coyote Glove' link='/gloveThumbs/41.jpg'/>
+	<glove id='42' name='M-PactÂ® 2 Covert Glove' link='/gloveThumbs/42.jpg'/>
+	<glove id='43' name='Performance Leather Driver Glove' link='/gloveThumbs/43.jpg'/>
+	<glove id='31' name='The Safety FastFitÂ®' link='/gloveThumbs/31.jpg'/>
+	<glove id='32' name='The Safety OriginalÂ®' link='/gloveThumbs/32.jpg'/>
+	<glove id='33' name='The Safety M-PactÂ®' link='/gloveThumbs/33.jpg'/>
+	<glove id='34' name='The Safety M-PactÂ® 2' link='/gloveThumbs/34.jpg'/>
+	<glove id='35' name='The Safety M-PactÂ® ORHD' link='/gloveThumbs/35.jpg'/>
+	<glove id='50' name='Cold Weather Fleece Utility Glove' link='/gloveThumbs/50.jpg'/>
+	<glove id='51' name='Cold Weather Wind Resistant Glove' link='/gloveThumbs/51.jpg'/>
+	<glove id='52' name='OriginalÂ® Insulated Glove' link='/gloveThumbs/52.jpg'/>
+	<glove id='53' name='FastFitÂ® Insulated Glove' link='/gloveThumbs/53.jpg'/>
+	<glove id='27' name='CG4x Utility' link='/gloveThumbs/27.jpg'/>
+	<glove id='28' name='CG4x Framer' link='/gloveThumbs/28.jpg'/>
+	<glove id='29' name='CG4x Padded Palm' link='/gloveThumbs/29.jpg'/>
+	<glove id='30' name='CG4x Impact Pro' link='/gloveThumbs/30.jpg'/>
+	<glove id='54' name='Shop Apron' link='/gloveThumbs/54.jpg'/>
+	<glove id='55' name='Heat Sleeves' link='/gloveThumbs/55.jpg'/>
+	<glove id='56' name='Radio Belt' link='/gloveThumbs/56.jpg'/>
+	<glove id='57' name='Mechanix Knee Pad' link='/gloveThumbs/57.jpg'/>
+	<glove id='58' name='Team Issue Knee Pad' link='/gloveThumbs/58.jpg'/>
+	<glove id='59' name='Travel Bag' link='/gloveThumbs/59.jpg'/>
+	<glove id='60' name='Back Pack' link='/gloveThumbs/60.jpg'/>
+	<glove id='61' name='Lanyard' link='/gloveThumbs/61.jpg'/>
+	<glove id='62' name='Stickers' link='/gloveThumbs/62.jpg'/>
+	<glove id='63' name='Vinyl Track Banners' link='/gloveThumbs/63.jpg'/>
+	<glove id='64' name='Umbrella' link='/gloveThumbs/64.jpg'/>
+	<glove id='65' name='Raincoat' link='/gloveThumbs/65.jpg'/>
+	<glove id='66' name='Logo Hat' link='/gloveThumbs/66.jpg'/>
+	<glove id='67' name='Scatter Hat' link='/gloveThumbs/67.jpg'/>
+	<glove id='44' name='TAA FastFitÂ® Glove' link='/gloveThumbs/44.jpg'/>
+	<glove id='45' name='TAA OriginalÂ® Glove' link='/gloveThumbs/45.jpg'/>
+	<glove id='46' name='TAA M-PactÂ® Glove' link='/gloveThumbs/46.jpg'/>
+	<glove id='47' name='TAA M-PactÂ® 2 Glove' link='/gloveThumbs/47.jpg'/>
+	<glove id='48' name='TAA M-PactÂ® 3 Glove' link='/gloveThumbs/48.jpg'/>
+	<glove id='68' name='20 Year T-Shirt' link='/gloveThumbs/68.jpg'/>
 </glovegroup>

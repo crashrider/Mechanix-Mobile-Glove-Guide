@@ -10,6 +10,7 @@ var newGloves = [];
 Ti.include("navBar.js");
 Ti.include("getGloves.js");
 Ti.include("video-popup.js");
+Ti.include("allGlovesArray.js");
 
 //Application Window
 var ggMainContainer = Titanium.UI.createWindow({
@@ -25,6 +26,7 @@ var splashScreen = Titanium.UI.createWindow({
    height: 768,
    width: 1024
 });
+
 //NavBar (ALWAYS AT TOP)
 var navBar = Titanium.UI.createWindow({
    //backgroundImage: 'ui-images/top-nav.png',
@@ -54,6 +56,7 @@ var ggContentsWin = Titanium.UI.createWindow({
    height: 725,
    left: 1024
 });
+
 /*var ggContentsWin = Titanium.UI.createWindow({
    backgroundColor: "#FFFFFF",
    width: 1024,
@@ -80,7 +83,7 @@ var ggDetailView = Titanium.UI.createWindow({
    backgroundColor:'#FFFFFF',
    top: 768,
    width: 1024,
-   height: 768
+   height: 725
 });
 
 var ggInfoView = Titanium.UI.createWindow({
@@ -155,7 +158,7 @@ ggMainContainer.add(navBar);
 ggMainContainer.open({fullscreen:true});
 splashScreen.open({fullscreen: true});
 
-setTimeout(fadeSS, 200);
+setTimeout(fadeSS, 2000);
 
 function fadeSS(){
 	splashScreen.animate({view: ggMainContainer, transition:Ti.UI.ANIMATION_CURVE_EASE_IN}, function(){
@@ -163,5 +166,4 @@ function fadeSS(){
 	});
 }
 
-Ti.include("catagories.js");
-Ti.API.info("fuck you");
+Ti.include("categories.js");

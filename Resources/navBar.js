@@ -176,6 +176,7 @@ function catButClick(e) {
 		});
 	}
 	lastButtonSelected = selectButton.catID;
+	alert(allGlovesArray);
 };
 
 function animateCatButtons(backwards) {
