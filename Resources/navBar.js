@@ -74,7 +74,7 @@ function createNavButtons(parent) {
 	});
 	
 	nav1.addEventListener('click', getHandChart);
-	nav2.addEventListener('click', getGloveGuide);
+	//nav2.addEventListener('click', getGloveGuide);
 	nav3.addEventListener('click', getInfo);
 	
 	parent.add(img1);
@@ -176,7 +176,7 @@ function catButClick(e) {
 		});
 	}
 	lastButtonSelected = selectButton.catID;
-	alert(allGlovesArray);
+	//alert(allGlovesArray[0].cats[1]);
 };
 
 function animateCatButtons(backwards) {

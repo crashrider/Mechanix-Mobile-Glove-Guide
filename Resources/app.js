@@ -14,17 +14,19 @@ Ti.include("allGlovesArray.js");
 
 //Application Window
 var ggMainContainer = Titanium.UI.createWindow({
-   backgroundColor:'#FFFFFF',
+   backgroundColor:'#000000',
    height: 768,
    width: 1024,
-   backgroundImage: 'ui-images/main-bg.png'
+   backgroundImage: 'ui-images/main-bg.png',
+   borderRadius: 5
 });
 
 var splashScreen = Titanium.UI.createWindow({
 	backgroundImage: 'ui-images/Default-Landscape.png',
-	backgroundColor: '#FFFFFF',
+	backgroundColor: '#000000',
    height: 768,
-   width: 1024
+   width: 1024,
+   borderRadius: 5
 });
 
 //NavBar (ALWAYS AT TOP)
@@ -87,7 +89,7 @@ var ggDetailView = Titanium.UI.createWindow({
 });
 
 var ggInfoView = Titanium.UI.createWindow({
-   backgroundImage: 'ui-images/Glove_Started.jpg'
+   backgroundImage: 'ui-images/Glove_Started.jpg',
 });
 
 var ggHangGaugeView = Titanium.UI.createWindow({

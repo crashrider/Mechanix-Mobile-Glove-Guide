@@ -73,7 +73,12 @@ function addGloveImages(parent){
 	var gloveImageArray = [];
 	var lastGloveWidth = 0;
 	var totalLeft = 0;
-	for (i=1; i<=30; i++){
+	var imageArrayLength = 14;
+	if (imageArrayLength<15){
+		parent.width = 1024;
+	}
+	//alert((Math.ceil(imageArrayLength/3))+1);
+	for (i=1; i<=imageArrayLength; i++){
 		gloveImageArray[i] = Titanium.UI.createImageView({
 			url: 'gloveThumbs/_sized/' + i + '.jpg',
 			height: 230,
@@ -81,18 +86,21 @@ function addGloveImages(parent){
 			//left: i*120,
 			detail: 'glovePages/glove' + i +'.jpg'
 		});
-		if (i>1&&i!=11&&i!=21){
+		if (i>1&&i!=(Math.ceil(imageArrayLength/3))+1&&i!=((Math.ceil(imageArrayLength/3))*2)+1){
 			totalLeft+=lastGloveWidth;
 		}
 		
-		if (i<=10){
+		
+		
+		
+		if (i<=Math.ceil(imageArrayLength/3)){
 			gloveImageArray[i].top = 21;
-		} else if (i>=11&&i<=20){
+		} else if (i<=Math.ceil(imageArrayLength/3)*2){
 			gloveImageArray[i].top = 241;
-		} else if (i>=21&&i<=30){
+		} else if (i<=imageArrayLength){
 			gloveImageArray[i].top = 468;
 		}
-		if (((i-1)/10) == Math.round(i/10)) {
+		if (((i-1)/Math.ceil(imageArrayLength/3)) == Math.round(i/Math.ceil(imageArrayLength/3))) {
 			totalLeft = 0;
 			lastGloveWidth = 0;
 		}	
