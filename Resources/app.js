@@ -14,10 +14,10 @@ Ti.include("allGlovesArray.js");
 
 //Application Window
 var ggMainContainer = Titanium.UI.createWindow({
-   backgroundColor:'#000000',
+   backgroundColor:'#FFFFFF',
    height: 768,
    width: 1024,
-   backgroundImage: 'ui-images/main-bg.png',
+   //backgroundImage: 'ui-images/main-bg.png',
    borderRadius: 5
 });
 
@@ -90,6 +90,8 @@ var ggDetailView = Titanium.UI.createWindow({
 
 var ggInfoView = Titanium.UI.createWindow({
    backgroundImage: 'ui-images/Glove_Started.jpg',
+   top:768,
+   opacity: 0
 });
 
 var ggHangGaugeView = Titanium.UI.createWindow({
@@ -165,6 +167,7 @@ setTimeout(fadeSS, 2000);
 function fadeSS(){
 	splashScreen.animate({view: ggMainContainer, transition:Ti.UI.ANIMATION_CURVE_EASE_IN}, function(){
 		setTimeout(animateCatButtons, 200);
+		splashScreen.backgroundImage = "";
 	});
 }
 

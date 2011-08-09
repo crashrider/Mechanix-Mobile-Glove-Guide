@@ -144,7 +144,8 @@ function getHandChart(e) {
 };
 
 function getInfo(e) {
-	
+	ggInfoView.top = 0;
+	ggInfoView.animate({opacity: 1, duration: 300});
 };
 
 function catButClick(e) {
@@ -158,7 +159,9 @@ function catButClick(e) {
 		}
 	}
 	if (ggDetailView.top==43){
-		ggDetailView.animate({top: 768, duration: 200}, function(){ggDetailView.top = 768;});
+		ggDetailView.animate({top: 768, duration: 200}, function(){
+			ggDetailView.top = 768;	
+		});
 		ggContentsWin.animate({top: 43, duration: 200});
 	}
 	var difference = lastButtonSelected-selectButton.catID;
